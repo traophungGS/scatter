@@ -63,9 +63,9 @@ input:focus-visible, button:focus-visible { outline: 3px solid var(--accent); ou
 </style>
 </head>
 <body>
-<div id="stage"><div id="hint" id="hint">Start typing. Every letter lands somewhere random.</div></div>
+<div id="stage"><div id="hint" id="hint">Start typing :)</div></div>
 <form id="f" autocomplete="off">
-  <input id="t" type="text" placeholder="Type here…" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here">
+  <input id="t" type="text" placeholder="Type here" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type here">
   <button type="button" id="clear">Clear</button>
 </form>
 <script>
@@ -73,7 +73,7 @@ input:focus-visible, button:focus-visible { outline: 3px solid var(--accent); ou
   var stage = document.getElementById("stage");
   var hint = document.getElementById("hint");
   var input = document.getElementById("t");
-  var items = []; // one entry per character in the input (null for spaces)
+  var items = []; // 1 entry per character in the input (null for spaces)
   var prev = "";
 
   function rand(a, b) { return a + Math.random() * (b - a); }
